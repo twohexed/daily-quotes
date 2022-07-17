@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=daily-quote
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_GB]=Daily-Quote
+Name=Daily-Quote
+Comment[en_GB]=Get notified by motivational quotes! :D
+Comment=Get notified by motivational quotes! :D
