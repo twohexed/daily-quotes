@@ -10,6 +10,7 @@ confinement: strict # use 'strict' once you have the right plugs and slots
 
 apps:
   daily-quote:
+    autostart: daily-quotes.desktop
     command: bin/daily-quote
     plugs:
       - x11

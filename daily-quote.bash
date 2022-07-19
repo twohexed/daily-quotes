@@ -1,7 +1,8 @@
 #!/usr/bin/bash
 
 if [ ! -f ~/.config/autostart/daily-quotes.desktop ]; then
-cp './desktop-file/desktop-file.desktop' '~/.config/autostart/daily-quotes.desktop' || echo "There was an error while creating a desktop entry."
+mkdir -p $SNAP_USER_DATA/.config/autostart
+cp $SNAP/desktop-file.desktop $SNAP_USER_DATA/.config/autostart/daily-quotes.desktop || echo "There was an error while creating a desktop entry."
 fi
 
 quote=$(curl -s "https://api.quotable.io/random")
